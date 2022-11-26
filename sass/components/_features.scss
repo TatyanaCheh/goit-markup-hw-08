@@ -1,0 +1,101 @@
+.feature {
+    padding: 60px 0;
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0 0 0;
+    }
+
+    &__list {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 1200px) {
+
+            margin-right: -30px;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        height: 120px;
+        border-radius: 4px;
+        background-color: var(--hero-background-color);
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__svg {
+        width: 70px;
+        height: 70px;
+    }
+
+    &__pre-title {
+        color: var(--tetriary-text-color);
+        font-size: 14px;
+        line-height: 1.71;
+        text-transform: none;
+        margin: 0 0;
+    }
+}
+
+
+.feature__item {
+    margin-bottom: 30px;
+    
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc(100% / 4 - 30px);
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
+         &:last-child {
+             margin-bottom: 0;
+    
+             @media screen and (min-width: 768px) {}
+    
+             @media screen and (min-width: 1200px) {
+                 margin-right: 0%;
+             }
+         }
+    
+         &:nth-child(odd) {
+             @media screen and (min-width: 768px) {
+                 margin-right: 30px;
+             }
+         }
+         
+}
+
+.feature__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+            text-align: start;
+        }
+    
+        @media screen and (min-width: 1200px) {     
+        }
+     .feature__item & {
+        margin-bottom: 10px;
+        margin-top: 0px;
+     }
+}
