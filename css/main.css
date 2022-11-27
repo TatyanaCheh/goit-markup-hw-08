@@ -457,7 +457,7 @@ a {
   transition: background-color var(--cubic-bezier);
 }
 .social__net:focus, .social__net:hover {
-  background-color: var(--accents);
+  background-color: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -670,7 +670,9 @@ a {
 }
 
 .nav {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media screen and (min-width: 768px) {
   .nav {

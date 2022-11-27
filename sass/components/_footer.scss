@@ -146,7 +146,7 @@
 
              &:focus,
              &:hover {
-              background-color: var(--accents);
+              background-color: var(--accent-color);
               }
        }
        .subscribe {
@@ -221,6 +221,7 @@
         
             @media screen and (min-width: 768px) {
                 width: 200px;
+              
             }
         
             @media screen and (min-width: 1200px) {
@@ -238,4 +239,3 @@
         color: var(--accent-color);
        }
 }
-
