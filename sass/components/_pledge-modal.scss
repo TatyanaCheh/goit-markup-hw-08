@@ -390,3 +390,20 @@
         background-color: var(--btn-activ-color);
     }
 }
+.modal-input {
+    transition: var(--cubic-bezier);
+}
+.modal-imput:hover,
+.modal-imput:focus {
+    border: 1px solid var(--accent-color);
+    outline: 1px var(--accent-color);
+   
+}
+
+.form-svg{
+transition: var(--cubic-bezier);
+}
+.modal-imput:hover ~ .form-svg,
+.modal-imput:focus ~ .form-svg {
+    fill: var(--accent-color);
+}

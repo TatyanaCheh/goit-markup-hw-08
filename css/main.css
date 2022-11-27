@@ -1548,6 +1548,27 @@ a {
     background-color: var(--btn-activ-color);
   }
 }
+.modal-input {
+  -webkit-transition: var(--cubic-bezier);
+  transition: var(--cubic-bezier);
+}
+
+.modal-imput:hover,
+.modal-imput:focus {
+  border: 1px solid var(--accent-color);
+  outline: 1px var(--accent-color);
+}
+
+.form-svg {
+  -webkit-transition: var(--cubic-bezier);
+  transition: var(--cubic-bezier);
+}
+
+.modal-imput:hover ~ .form-svg,
+.modal-imput:focus ~ .form-svg {
+  fill: var(--accent-color);
+}
+
 .portfolio {
   padding-bottom: 94px;
   padding-top: 94px;
