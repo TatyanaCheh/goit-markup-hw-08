@@ -23,12 +23,25 @@
                 width: 270px;
             }
     }
+        &__wrap {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+        &__discription {
+            font-size: 16px;
+            line-height: 1.19;
+            letter-spacing: .03em;
+            font-weight: 400;
+            color: var(--tetriary-text-color);
+                }
      &__pre-title {
         font-size: 16px;
         line-height: 1.19;
         letter-spacing: 0.03em;
         text-align: center;
         font-weight: 500;
+        margin-bottom: 10px;
     }
     &__discription {
         font-size: 16px;
@@ -69,8 +82,7 @@
          }
          }
         .hero__item {
-            
-          
+            padding-bottom: 24px;
             background-color: var(--primary-background-color);
             border-radius: 0 0 4px 4px;
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -131,35 +143,8 @@
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     
-        .team__icon-bgc:hover &,
-        .team__icon-bgc:focus & {
-            fill: var(--primary-background-color)
+        .hero__icon-net:hover &,
+        .hero__icon-net:focus & {
+            fill: var(--primary-background-color);
 }
 }
-
-
-
-
-
-
-
-    &__title {
-     margin-bottom: 50px;    
-     font-weight: 700;
-     font-size: 36px;
-     line-height: 1.17;
-     letter-spacing: 0.03em;
-     text-align: center;
-    }
-    &__list {
-     display: flex;
-     flex-wrap: wrap;
-    }
-    
-   
-    
-    &__wrap {
-       padding-top: 30px;
-       padding-bottom: 30px;
-       text-align: center;
-        }
