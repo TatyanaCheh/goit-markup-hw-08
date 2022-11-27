@@ -1,18 +1,17 @@
 .header {
+    position: relative;
     border-bottom: 1px solid var(--header-border-color);
     margin: auto;
-    position: relative;
+
 
 }
 
+
 .logo {
-    color: var(--accent-color);
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", cursive;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-decoration: none;
+    color: var(--accent-color);
     padding: 15px 0;
 
     @media screen and (min-width: 768px) {
@@ -23,9 +22,9 @@
     }
 
     @media screen and (min-width: 1200px) {
+        margin-right: 93px;
         padding: 25px 0;
         font-size: 26px;
-        margin-right: 93px;
     }
 
     &-part {
@@ -33,23 +32,13 @@
     }
 }
 
-.header__container {
-    display: flex;
-    align-items: center;
 
-    @media screen and (min-width: 480px) {
-    }
 
-    @media screen and (min-width: 768px) {
-    }
+/* Навігація */
 
-    @media screen and (min-width: 1200px) {
-        flex-wrap: wrap;
-    }
-}
 
 .nav {
-    display: flex;
+    display: none;
 
     @media screen and (min-width: 768px) {
         display: block;
@@ -70,130 +59,105 @@
         }
     }
 
-    &__list li:not(:first-child) {
-        margin-left: 50px;
-    }
-
-    &__link {
+    &__item {
         display: block;
         padding-top: 32px;
         padding-bottom: 32px;
-        transition: color var(--cubic-bezier);
-        color: var(--primary-text-color);
-        font-size: 14px;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    &__link {
         font-weight: 500;
-        line-height: 1.14;
+        font-size: 14px;
         letter-spacing: 0.02em;
-        text-decoration: none;
+        color: var(--primary-text-color);
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 
-.nav__link:focus,
-.nav__link:hover {
-    color: var(--accent-color);
-}
 
-.current {
-    position: relative;
-    color: var(--accent-color);
-}
-
-.current::after {
-    content: "";
-    position: absolute;
-    left: -1px;
-    bottom: -1px;
-    display: block;
-    width: calc(100% + 1px);
-    height: 4px;
-    border-radius: 2px;
-    background: var(--accent-color);
-}
+/* Контакти */
 
 .contact {
-    &__list {
-        margin-left: auto;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        display: none;
+    display: none;
+
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {}
+
+
+    &__list:not(:last-child) {
 
         @media screen and (min-width: 768px) {
-            display: flex;
-            flex-wrap: wrap;
+            margin-bottom: 10px;
         }
 
-        @media screen and (min-width: 1200px) {}
-
-        &__list li:not(:first-child) {
-            @media screen and (min-width: 768px) {
-                margin-bottom: 10px;
-            }
-
-            @media screen and (min-width: 1200px) {
-                margin-left: 50px;
-                margin-bottom: 0;
-
-            }
+        @media screen and (min-width: 1200px) {
+            margin-right: 50px;
+            margin-bottom: 0;
         }
+    }
 
-        &__list .svg {
-            margin-right: 10px;
-            fill: currentColor;
-        }
+    &__mail {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.02em;
+        color: var(--maintext);
 
-        &__mail,
-        &__tel {
-            display: flex;
-            align-items: center;
-            font-size: 12px;
-            transition: color var(--cubic-bezier);
-            color: var(--primary-text-color);
-
-            font-weight: 500;
-            line-height: 1.14;
-            letter-spacing: 0.02em;
-            text-decoration: none;
-
-            @media screen and (min-width:1200px) {
-                padding-top: 32px;
-                padding-bottom: 32px;
-                font-size: 14px;
-            }
-
-
-            color: var(--tetriary-text-color);
+        @media screen and (min-width: 1200px) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+            font-size: 14px;
         }
     }
 }
 
-.contact__svg {
-    fill: currentColor;
+.contact__tel {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: var(--tetriary-text-color);
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-size: 14px;
+    }
+}
+
+
+
+.contact__icon {
     display: block;
     align-items: center;
     margin-right: 10px;
-    transition: var(--cubic-bezier);
-
-    .contact__tel:hover &,
-    .contact__tel:focus & {
-        fill: var(--accent-color);
-    }
+    fill: var(--tetriary-text-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .contact__mail:hover &,
     .contact__mail:focus & {
         fill: var(--accent-color);
     }
-}
 
-.contact__mail:hover,
-.contact__mail:focus,
-.contact__tel:hover,
-.contact__tel:focus {
-    color: var(--accent-color);
-}
-
-.contact__tel,
-.contact__mail {
-    color: var(--cubic-bezier);
+    .contact__tel:hover &,
+    .contact__tel:focus & {
+        fill: var(--accent-color);
+    }
 }
 
 /* бургер*/
