@@ -749,7 +749,7 @@ a {
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.02em;
-  color: var(--maintext);
+  color: var(--tetriary-text-color);
 }
 @media screen and (min-width: 1200px) {
   .contact__mail {
@@ -1567,6 +1567,7 @@ a {
 
 .portfolio__filter-button {
   padding: 6px 22px;
+  color: var(--primary-text-color);
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
