@@ -240,7 +240,8 @@
 
     .drop-menu__contact-tel {
         font-size: 34px;
-        line-height: 40px;
+        line-height: 1.18;
+        font-weight: 500;
         letter-spacing: 0.02em;
         color: var(--tetriary-text-color);
 
@@ -257,7 +258,8 @@
 
     .drop-menu__contact-mail {
         font-size: 24px;
-        line-height: 1.16px;
+        font-weight: 500;
+        line-height: 1.16;
         letter-spacing: 0.02em;
         color: var(--tetriary-text-color);
 
